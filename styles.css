@@ -74,16 +74,19 @@ p, span{
     gap: 25px;
     padding: 10px ;
 }
-#form-box #input-box{
-    display: grid;
-    gap: 5px;
+#form-box #input-box label{
+    display: block;
+    padding-bottom: 5px;
 }
+
 #form-box #input-box input{
     padding: 10px 10px;
     border: 1px rgba(0, 0, 0, 0);
     background-color: rgb(238, 238, 238);
     border-radius: 3px;
     outline: none;
+    width: 100%;
+    box-sizing: border-box;
 }
 #form-box #input-box input:focus{
     border: 1px solid rgb(0, 0, 0);
