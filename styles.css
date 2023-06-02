@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-image: url('assets/bg.jpg');
+    background-size: auto;
+    transition: all 1s ease-in-out;
+}
+#main{
+    display: block;
+    padding: 50px 50px;
+}
+#wrap-form-box{
+    background-color: white;
+    display: grid;
+    padding: 30px 20px;
+    gap: 5px;
+    border-radius: 3px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.144);
+}
+/* form-header */
+#form-header{
+    text-align: center;
+    display: grid;
+    gap: 10px;
+    padding: 15px 10px;
+}
+#form-header header{
+    font-size: 23px;
+    font-weight: bold;   
+}
+#google-button{
+    background-color: white;
+    border: 0.5px solid rgb(151, 144, 144);
+    align-items: center;
+    padding: 7px 15px;
+    margin-top: 15px;
+    display: flex;
+    border-radius: 5px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.144);
+    transition: all 0.2s ease-in-out;
+}
+#google-button:hover{
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}
+#google-button span{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#google-button #logo-google img{
+   height: 25px;
+   width: 25px;
+}
+#or {
+    display:flex;
+}
+#or:before, #or:after {
+    color:rgb(255, 255, 255);
+    content:'';
+    flex:1;
+    border-bottom:groove 2px;
+    margin:auto 0.5em;
+}
+#form-box{
+    display: grid;
+    gap: 25px;
+    padding: 10px ;
+}
+#form-box #input-box{
+    display: grid;
+    gap: 5px;
+}
+#form-box #input-box input{
+    padding: 10px 10px;
+    border: 1px rgba(0, 0, 0, 0);
+    background-color: rgb(238, 238, 238);
+    border-radius: 3px;
+    outline: none;
+}
+#form-box #input-box input:focus{
+    border: 1px solid rgb(0, 0, 0);
+}
+#form-box #recover-pass{
+    /* background-color: aqua; */
+    padding: 0px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#form-box #recover-pass a{
+    color: black;
+    text-align: end;
+}
+#form-box #recover-pass #remember-me-box{
+    align-items: center;
+    display: flex;
+    gap: 5px;
+}
+#form-box input[type=submit]{
+    background-color: rgb(86, 86, 221);
+    color: white;
+    height: 35px;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.144);
+    transition: all 0.2s ease-in-out;
+}
+#form-box input[type=submit]:hover{
+    transform: scale(1.01);
+    transition: all 0.2s ease-in-out;
+}
+#form-box #sign-up-button{
+    text-align: center;
+    padding-top: 10px;
+}
+#form-box #sign-up-button a{
+    color: black;
+}
+#information{
+    background-color: #58f9ff;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 10px;
+    display: none;
+    border-radius: 0px 3px 3px 0px;
+    box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.144);
+}
+#information img{
+    height: 400px;
+}
+
+@media screen and (min-width: 1080px) {
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 1s ease-in-out;
+    }
+    #main{
+        display: flex;
+        padding: 50px 50px;
+        justify-content: center;
+        
+    }
+    #information{
+        display: flex;
+        width: 40%;
+    }
+    #wrap-form-box{
+        padding: 35px 60px;
+        border-radius: 3px 0px 0px 3px;
+        
+    }
+}
+@media screen and (min-width: 720px) {
+    /* body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: all 1s ease-in-out;
+    } */
+    #main{
+        padding: 50px 150px;
+    }
+
+}
+@media screen and (min-width: 820px) {
+    #main{
+        display: flex;
+        padding: 50px 0px;
+        justify-content: center;
+        transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
+    }
+    #information{
+        display: flex;
+        width: 40%;
+    } 
+    #wrap-form-box{
+        padding: 35px 60px;
+        border-radius: 3px 0px 0px 3px;
+    } 
+
+}
+@media screen and (max-width: 400px) {
+    #main{
+        padding: 50px 20px;
+    }
+}
