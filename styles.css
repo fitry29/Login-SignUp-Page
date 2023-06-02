@@ -7,6 +7,9 @@ body{
     background-size: auto;
     transition: all 1s ease-in-out;
 }
+p, span{
+    font-size: 13px;
+}
 #main{
     display: block;
     padding: 50px 50px;
