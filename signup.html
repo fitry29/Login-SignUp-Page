@@ -9,51 +9,63 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-    <title>Login Page</title>
+    <title>Sign Up Page</title>
 </head>
 <body>
 
     <div id="main">
+        <div id="information">
+            <img src="assets/sing-up-bg.png" alt="">
+        </div>
         <div id="wrap-form-box">
             <div id="form-header">
-                <header>Hello Again!</header>
-                <p>Welcome back please fill up your details</p>
+                <header>Let's Join Us</header>
+                <p>Let we know you, fill up the information</p>
                 <button id="google-button" onclick="">
                     <div id="logo-google">
                         <img src="https://img.icons8.com/?size=512&id=17949&format=png" alt="google-icon">
                     </div>
-                    <span>Log in with Google</span>
+                    <span>Sing Up with Google</span>
                 </button>
             </div>
             <p id="or">or</p>
             <form action="" id="form-box">
                 <div id="input-box">
                     <label for="name">Username</label>
-                    <input type="text" name="name" id="name" placeholder="John87">
+                    <input type="text" name="name" id="name" placeholder="John87" required>
+                </div>
+                <div id="input-box">
+                    <label for="email">Username</label>
+                    <input type="email" name="email" id="email" placeholder="John87@email.com" required>
                 </div>
                 <div id="input-box">
                     <div id="password-label-box">
                         <label for="password">Password </label>
                         <i class="fa fa-eye" id="eye"></i>
                     </div>
-                    <input type="password" name="password" id="password" placeholder="Enter your password">
+                    <input type="password" name="password" id="password" placeholder="Enter your password" required>
+                </div>
+                <div id="input-box">
+                    <div id="password-label-box">
+                        <label for="confirm-password">Confirm Password</label>
+                    </div>
+                    <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm password" required>
                 </div>
                 <span id="recover-pass">
                     <div id="remember-me-box">
                         <input type="checkbox" name="remember" id="remember">
-                        Remember Me
+                        I have read and agreed to the
+                        <a href="" target="_self">Terms and Condition</a>
                     </div>
-                    <a href="" target="_self">Forgot password</a>
+                    
                 </span>
-                <input type="submit" value="Log In"></input>
+                <input type="submit" value="Sign Up"></input>
                 <span id="sign-up-button">
-                    Don't have an account? <a href="signup.html" target="_self"> Sign up here.</a>
+                    Already have an account? <a href="" target="_self"> Login here.</a>
                 </span>
             </form>
         </div>
-        <div id="information">
-            <img src="assets/login.png" alt="">
-        </div>
+    
     </div>
     <script>showHidePassword();</script>
 </body>
