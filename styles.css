@@ -78,7 +78,16 @@ p, span{
     display: block;
     padding-bottom: 5px;
 }
-
+#form-box #input-box #password-label-box{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 15px;
+}
+#form-box #input-box #password-label-box .fa-eye{
+    font-size: 15px;
+    color: lightgray;
+    cursor: pointer;
+}
 #form-box #input-box input{
     padding: 10px 10px;
     border: 1px rgba(0, 0, 0, 0);
@@ -190,8 +199,8 @@ p, span{
     } 
 
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 420px) {
     #main{
-        padding: 50px 20px;
+        padding: 100px 30px;
     }
 }
