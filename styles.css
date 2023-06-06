@@ -91,6 +91,8 @@ p, span{
     border-bottom:groove 2px;
     margin:auto 0.5em;
 }
+/* END OF HEADER */
+/* START FORM STYLE */
 #form-box{
     display: grid;
     gap: 25px;
@@ -121,6 +123,11 @@ p, span{
 }
 #form-box #input-box input:focus{
     border: 1px solid rgb(0, 0, 0);
+}
+#username-err-msg, #pass-err-msg{
+    padding-left: 5px;
+    padding-top: 5px;
+    color: red;
 }
 #form-box #recover-pass{
     /* background-color: aqua; */
@@ -158,6 +165,7 @@ p, span{
 #form-box #sign-up-button a{
     color: black;
 }
+/* END FORM STYLE */
 #information{
     background-color: #58f9ff;
     justify-content: center;
