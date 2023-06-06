@@ -1,5 +1,5 @@
 ﻿# Login and SignUp Page
-This is Frontend Login Page and Sign Up Page responsive for both mobile, tablet and desk.
+This is Frontend Login Page and Sign Up Page responsive for both mobile, tablet and desktop.
 
 Check it out! 
 https://fitry29.github.io/Login-SignUp-Page/
